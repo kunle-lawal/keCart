@@ -24,6 +24,7 @@ export class SignInScreen extends Component {
 
     render() {
         const auth = this.props.auth;
+        console.log(auth.uid)
         if (auth.uid) { return null }
         // console.log(this.props.profileData);
         // console.log(this.state);

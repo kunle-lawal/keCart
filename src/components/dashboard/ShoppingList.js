@@ -109,9 +109,9 @@ let AddItem = (props) => {
 }
 
 const mapStateToProps = (state, ownProps) => {
-    console.log(state);
-    console.log(ownProps.match.params.id);
-    console.log(state.firestore.data.carts);
+    // console.log(state);
+    // console.log(ownProps.match.params.id);
+    // console.log(state.firestore.data.carts);
     let collection = `carts/${ownProps.match.params.id}/cartItems`
     let cartItems = state.firestore.ordered[collection] ? state.firestore.ordered[collection] : [];
     let cartData = state.firestore.data.carts ? state.firestore.data.carts[ownProps.match.params.id] : [];
